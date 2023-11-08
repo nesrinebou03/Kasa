@@ -23,26 +23,26 @@ export default function Carrousel({ pictures }) {
 
   return (
     <div className="carrousel">
-      <img
+      {pictures.length > 1 && <img
         className="fleche-gauche"
         src={flecheGauche}
         alt="fleche gauche"
         onClick={handleLeftClick}
-      />
+      />}
       <img
         className="main-img"
         src={pictures[index]}
         alt="image du carrousel"
       />
-      <img
+      {pictures.length > 1 && <img
         className="fleche-droite"
         src={flecheDroite}
         alt="fleche droite"
         onClick={handleRightClick}
-      />
-      <span>
+      />}
+      {pictures.length > 1 && <span>
         {index + 1} / {pictures.length}
-      </span>
+      </span>}
     </div>
   );
 }
