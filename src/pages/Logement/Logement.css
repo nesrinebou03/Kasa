@@ -1,0 +1,145 @@
+.apprt_headr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 35px;
+  margin-bottom: 30px;
+}
+.apprt_title {
+}
+.apprt_title h1 {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 51.336px */
+}
+.apprt_soutitle {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+  color: #ff6060;
+  margin-bottom: 20px;
+}
+.apprt_host {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.host_name {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.host_name p {
+  color: #ff6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+}
+
+.host_name > img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.host_rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.apprt_elem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0 10px;
+}
+.apprt_desc h3 {
+  background-color: #ff6060;
+  color: #ffff;
+  display: flex;
+  width: 600px;
+  padding: 10px 20px 10px 10px;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px 10px;
+}
+.apprt_desc p {
+  width: 600px;
+}
+.apprt_titl {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .apprt_headr {
+    width: 100%;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .apprt_title h1 {
+    font-size: 24px;
+
+    line-height: 25px; /* 51.336px */
+  }
+  .apprt_soutitle {
+    font-size: 16px;
+
+    line-height: 14px; /* 25.668px */
+
+    margin-bottom: 20px;
+  }
+  .apprt_host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .host_name p {
+    font-size: 18px;
+    width: 120px;
+    line-height: 24px; /* 25.668px */
+  }
+  .host_name img {
+    width: 40px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .tags-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .apprt_elem {
+    flex-direction: column;
+    gap: 0;
+  }
+  .host_rating {
+    display: flex;
+    width: 100px;
+  }
+}

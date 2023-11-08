@@ -1,0 +1,35 @@
+.nav_about {
+  margin: 0 20px;
+}
+.nav_about > img {
+  filter: brightness(70%) saturate(100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  object-fit: cover;
+  background-size: cover;
+  height: 223px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+}
+
+.collaps_about {
+  padding: 0px 200px;
+}
+
+@media (max-width: 768px) {
+  .nav_about {
+    margin: 0 5px;
+  }
+  .nav_about img {
+    margin-top: 10px;
+  }
+
+  .collaps_about {
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1024px) {
+}
