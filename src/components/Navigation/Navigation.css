@@ -15,6 +15,7 @@ header {
   flex-shrink: 0;
   margin-right: 100px;
 }
+
 nav ul {
   display: flex;
   align-items: flex-start;
@@ -22,6 +23,7 @@ nav ul {
   justify-content: end;
   list-style: none;
 }
+
 .nav_bar {
   color: #ff6060;
   text-align: right;
@@ -35,6 +37,7 @@ nav ul {
   margin-top: 50px;
   text-decoration: none;
 }
+
 .nav_bar.active {
   text-decoration: underline;
   color: #ff6060;
@@ -55,19 +58,14 @@ nav ul {
   }
   nav ul {
     gap: 5px;
-  
-    
   }
   .nav_bar {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     margin-left: 8px;
-  
-    
-}
-.navigation_header img {
-  width: 60px;
- 
-}
+  }
+  .navigation_header img {
+    width: 60px;
+  }
 }

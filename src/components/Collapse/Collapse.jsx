@@ -13,7 +13,6 @@ export default function Collapse({ title, contenu = null, equipments = null }) {
     <div className="collapse">
       <section className="collapse-header" onClick={handleVisibility}>
         <h2>{title}</h2>
-        {/* <p className={isVisible ? "active" : ""}>^</p>*/}
         <img
           className={isVisible ? "active" : ""}
           src={fleche}
